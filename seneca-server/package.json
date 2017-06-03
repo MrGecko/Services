@@ -1,0 +1,19 @@
+{
+  "name": "seneca-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seneca-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node seneca-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "mongodb": "^2.2.26",
+    "node-fetch": "^1.7.0",
+    "seneca": "^3.3.0",
+    "xml-js": "^1.3.0"
+  }
+}
