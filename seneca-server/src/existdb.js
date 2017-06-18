@@ -17,7 +17,7 @@ function listTitles(msg, respond) {
     }
   ).then(function(data) {
         data.text().then(function(xml){
-          var json = convert.xml2json(xml, {compact: true, spaces: 0});
+            const json = convert.xml2json(xml, {compact: true, spaces: 0});
           respond(null, JSON.parse(json));
           }
         );
@@ -30,4 +30,4 @@ module.exports = function existdb(options) {
   this.add('role:existdb,cmd:listTitles', listTitles);
   console.log('listTitles added to Seneca');
 
-}
+};
